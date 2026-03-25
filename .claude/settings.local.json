@@ -1,0 +1,41 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find /Users/fherrero/Workspace/personal/superplanner/.claude -type f -name *.md -o -name *.png -o -name *.jpg)",
+      "Bash(find /Users/fherrero/Workspace/personal/superplanner/src -type f \\\\\\(-name *.ts -o -name *.tsx -o -name *.js -o -name *.jsx \\\\\\))",
+      "Bash(npx tsc:*)",
+      "Bash(grep -E \"\\\\.\\(ts|tsx|js\\)$\")",
+      "mcp__ios-simulator__open_simulator",
+      "mcp__ios-simulator__get_booted_sim_id",
+      "mcp__ios-simulator__launch_app",
+      "mcp__ios-simulator__screenshot",
+      "mcp__ios-simulator__ui_tap",
+      "Bash(xcrun simctl:*)",
+      "Bash(/Users/fherrero/.claude/skills/image-analyze/scripts/image-analyze.ts /Users/fherrero/Downloads/superplanner-plus-button.png /Users/fherrero/Workspace/personal/superplanner/.claude/rules/01-calendar/02-plus-button.png -p \"Compare these two mobile app screenshots focusing on: 1\\) floating menu position \\(left/right/center alignment\\), 2\\) floating menu size and width, 3\\) icon styles inside the menu items, 4\\) nav bar button styles \\(back button, inbox button\\), 5\\) any other visual differences. Be specific about pixel positions and alignments.\")",
+      "Bash(/Users/fherrero/.claude/skills/image-analyze/scripts/image-process.ts side-by-side:*)",
+      "Bash(/Users/fherrero/.claude/skills/image-analyze/scripts/image-analyze.ts /Users/fherrero/Downloads/superplanner-plus-button.png /Users/fherrero/Workspace/personal/superplanner/.claude/rules/01-calendar/02-plus-button.png -p \"Compare these two mobile app screenshots. Focus on: 1\\) floating menu card position and alignment, 2\\) icon styles for each menu item, 3\\) menu card size/padding, 4\\) nav bar buttons \\(back button, inbox button styles\\), 5\\) any remaining visual differences. Be specific.\")",
+      "Read(//Users/fherrero/.claude/skills/image-analyze/**)",
+      "Bash(bun install:*)",
+      "Bash(bun run:*)",
+      "Bash(npm install:*)",
+      "Bash(node --experimental-strip-types scripts/image-process.ts side-by-side --image1 /Users/fherrero/Downloads/superplanner-plus-button.png --image2 /Users/fherrero/Workspace/personal/superplanner/.claude/rules/01-calendar/02-plus-button.png --output /Users/fherrero/Downloads/comparison-side-by-side.png --gap 8)",
+      "mcp__ios-simulator__ui_describe_point",
+      "mcp__ios-simulator__ui_describe_all",
+      "mcp__ios-simulator__ui_type",
+      "mcp__ios-simulator__ui_swipe",
+      "mcp__ios-simulator__ui_view",
+      "Bash(curl -s -X POST http://localhost:8081/reload)",
+      "Bash(npx:*)",
+      "Bash(lsof -ti:8081)",
+      "Bash(curl -s http://localhost:8081/status)",
+      "WebFetch(domain:docs.expo.dev)",
+      "Bash(file /Users/fherrero/Workspace/personal/superplanner/.claude/rules/07-main-dashboard/*.png)",
+      "WebSearch",
+      "Bash(ls /Users/fherrero/Workspace/personal/superplanner/node_modules/expo-router/unstable-native-tabs*)",
+      "Bash(xargs ls:*)",
+      "Bash(grep -rn \"import.*SafeAreaView.*from ''''react-native''''\" /Users/fherrero/Workspace/personal/superplanner/src --include=\"*.tsx\")",
+      "Bash(sed -i '' \"s/behavior={Platform\\\\.OS === ''ios'' ? ''padding'' : undefined}/behavior={process.env.EXPO_OS === ''ios'' ? ''padding'' : undefined}/g\" /Users/fherrero/Workspace/personal/superplanner/src/app/new-list.tsx /Users/fherrero/Workspace/personal/superplanner/src/app/add-activity.tsx /Users/fherrero/Workspace/personal/superplanner/src/features/task/components/TaskFormBody.tsx)",
+      "Bash(sed -i '' '/^  Platform,$/d' /Users/fherrero/Workspace/personal/superplanner/src/app/new-list.tsx /Users/fherrero/Workspace/personal/superplanner/src/app/add-activity.tsx /Users/fherrero/Workspace/personal/superplanner/src/features/task/components/TaskFormBody.tsx /Users/fherrero/Workspace/personal/superplanner/src/app/activity-list.tsx)"
+    ]
+  }
+}
