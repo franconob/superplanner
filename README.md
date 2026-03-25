@@ -28,3 +28,6 @@ Also, using this MCP, Claude can take screenshots of the app and I created a val
 #### About the challenge
 This has been very challenging for me, I learnt a lot of things (specially Agent Teams). Some things don't work, others are not implemented, I need
 more practice with this workflow but is has been awesome! Thanks for this opportunity.
+
+### Demo
+[Suplerplanner Demo](https://youtube.com/shorts/V3rbHup19l0?feature=share)
